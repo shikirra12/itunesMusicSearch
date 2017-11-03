@@ -1,3 +1,44 @@
 body {
+  margin: 0px;
   background-color: #60d9f1;
+  font-family: 'Bad Script', cursive;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+body:hover {
+  background: #ff7b29;
+}
+
+/*.container {
+  -webkit-animation:bgChange 2s 2s alternate infinite;
+ transition: all 2s ease;
+}*/
+
+.music-player {
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 42pt;
+  text-shadow: 4px 4px 6px #000000;
+  text-align: center;
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.songs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
 }

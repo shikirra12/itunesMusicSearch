@@ -31,7 +31,7 @@ fetch("https://itunes.apple.com/search?term=" + searchInfo + "&entity=song")
 
       response.json().then(function(data) {
         displaySong(data);
-        // console.log("Here is the data:", data.results);
+        console.log("Here is the data:", data.results);
       });
     }
   )
@@ -48,6 +48,7 @@ function displaySong(data) {
 
     template +=
     `
+    <br>
     <div class="songs">
     <img src="${data.results[i].artworkUrl100}">
     <h3>${data.results[i].artistName}</h3>
